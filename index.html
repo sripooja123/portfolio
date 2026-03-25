@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Pooja Sri Chilakala — AI/ML student. Projects in Computer Vision and NLP."
+    />
+    <title>Pooja Sri Chilakala | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      // Apply theme early to avoid flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          if (stored === "dark" || stored === "light") {
+            document.documentElement.setAttribute("data-theme", stored);
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#home" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true">PS</span>
+          <span class="brand__text">Pooja Sri</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="nav__toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <div class="nav__links" id="nav-links" data-nav-links>
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#projects">Projects</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__link" href="#education">Education</a>
+            <a class="nav__link" href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="header__actions">
+          <button
+            class="btn btn--ghost"
+            type="button"
+            data-theme-toggle
+            aria-label="Toggle dark mode"
+          >
+            <span class="btn__icon" aria-hidden="true">◐</span>
+            <span class="btn__text">Theme</span>
+          </button>
+          <a class="btn btn--primary" href="#contact">Hire / Internship</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">CSE (AI &amp; ML) Student</p>
+            <h1 class="hero__title">
+              Hi, I’m <span class="accent">Pooja Sri Chilakala</span>.
+              <br />
+              I build AI projects with a focus on real-world impact.
+            </h1>
+            <p class="hero__subtitle">
+              Based in Hyderabad, Telangana. Interested in internships and
+              collaborative projects in Computer Vision and NLP.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">View projects</a>
+              <a class="btn btn--ghost" href="#resume">View resume</a>
+            </div>
+
+            <ul class="hero__meta" aria-label="Quick info">
+              <li><span class="pill">Hyderabad, India</span></li>
+              <li>
+                <a class="pill pill--link" href="mailto:sripooja782@gmail.com"
+                  >sripooja782@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="pill pill--link" href="tel:+916300377671"
+                  >+91 63003 77671</a
+                >
+              </li>
+            </ul>
+
+            <div class="social">
+              <a
+                class="social__link"
+                href="https://github.com/sripooja123"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/in/pooja63003"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="profile">
+              <div class="profile__imgWrap">
+                <img
+                  class="profile__img"
+                  src="./assets/profile.jpg"
+                  alt="Portrait photo"
+                  loading="lazy"
+                  onerror="this.closest('.profile__imgWrap').classList.add('is-missing')"
+                />
+                <div class="profile__placeholder" aria-hidden="true">
+                  <!-- Add your photo at <code>assets/profile.jpg</code> -->
+                </div>
+              </div>
+              <div class="profile__info">
+                <p class="profile__name">Pooja Sri Chilakala</p>
+                <p class="profile__role">AI/ML • Computer Vision • NLP</p>
+              </div>
+              <div class="profile__stats" aria-label="Highlights">
+                <div class="stat">
+                  <p class="stat__k">5+</p>
+                  <p class="stat__v">Projects</p>
+                </div>
+                <div class="stat">
+                  <p class="stat__k">8.47</p>
+                  <p class="stat__v">B.Tech CGPA</p>
+                </div>
+                <div class="stat">
+                  <p class="stat__k">9.87</p>
+                  <p class="stat__v">Diploma CGPA</p>
+                </div>
+              </div>
+              <div class="profile__buttons">
+                <a class="btn btn--primary btn--block" href="#contact"
+                  >Contact me</a
+                >
+                <a
+                  class="btn btn--ghost btn--block"
+                  href="./assets/Pooja_Sri_Chilakala_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open resume (PDF)
+                </a>
+              </div>
+              <p class="tiny">
+                <!-- If download doesn’t work, place your resume at
+                <code>assets/Pooja_Sri_Chilakala_Resume.pdf</code>. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">About</h2>
+            <p class="section__subtitle">
+              Enthusiastic AI/ML student with strong problem-solving skills,
+              Smart Interview performance, and experience building user-friendly
+              solutions.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="card">
+              <h3 class="card__title">Career objective</h3>
+              <p class="card__text">
+                Seeking an internship where I can contribute to multidisciplinary
+                projects, learn continuously, and deliver reliable solutions with
+                measurable impact.
+              </p>
+              <ul class="list">
+                <li><strong>Strengths:</strong> Coding, problem-solving</li>
+                <li>
+                  <strong>Collaboration:</strong> Teamwork, adaptability
+                </li>
+                <li>
+                  <strong>Focus areas:</strong> Computer Vision, NLP, ML systems
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">What I work with</h3>
+              <div class="chips" aria-label="Tech">
+                <span class="chip">Python</span>
+                <span class="chip">TensorFlow</span>
+                <span class="chip">OpenCV</span>
+                <span class="chip">YOLO</span>
+                <span class="chip">SQL / MySQL</span>
+                <span class="chip">Transformers</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+              </div>
+              <p class="card__text tiny">
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__subtitle">
+              Selected projects from my resume.
+            </p>
+          </div>
+
+          <div class="toolbar">
+            <p class="toolbar__label">Filter</p>
+            <div class="toolbar__buttons" role="tablist" aria-label="Filters">
+              <button class="pillBtn is-active" type="button" data-filter="all">
+                All
+              </button>
+              <button class="pillBtn" type="button" data-filter="cv">
+                Computer Vision
+              </button>
+              <button class="pillBtn" type="button" data-filter="nlp">
+                NLP
+              </button>
+              <button class="pillBtn" type="button" data-filter="iot">
+                IoT / Apps
+              </button>
+            </div>
+          </div>
+
+          <div class="projects" data-projects>
+            <article class="project" data-tags="cv">
+              <div class="project__top">
+                <h3 class="project__title">AstroTrack — Astronomical Object Tracking</h3>
+                <span class="badge">CV</span>
+              </div>
+              <p class="project__desc">
+                Built a real-time system to detect and track satellites and space
+                debris in simulated night-sky video feeds.
+              </p>
+              <div class="project__stack">
+                <span class="tag">Python</span>
+                <span class="tag">YOLOv8</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">DeepSORT</span>
+                <span class="tag">TensorFlow</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" data-disabled="true">Code</a>
+                <a class="link" href="#" data-disabled="true">Demo</a>
+              </div>
+            </article>
+
+            <article class="project" data-tags="cv nlp">
+              <div class="project__top">
+                <h3 class="project__title">
+                  NeuroNavGPT — Vision-Language Co-Pilot for Surgical Guidance
+                </h3>
+                <span class="badge">CV + VLM</span>
+              </div>
+              <p class="project__desc">
+                Built a real-time vision-language assistant for pituitary tumor MRI
+                analysis, enabling language-based surgical queries and feedback.
+              </p>
+              <div class="project__stack">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">YOLOv8</span>
+                <span class="tag">BLIP-2</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" data-disabled="true">Code</a>
+                <a class="link" href="#" data-disabled="true">Demo</a>
+              </div>
+            </article>
+
+            <article class="project" data-tags="cv">
+              <div class="project__top">
+                <h3 class="project__title">
+                  YOLO-Based Vehicle Risk Behaviour Analyser
+                </h3>
+                <span class="badge">CV</span>
+              </div>
+              <p class="project__desc">
+                Developed a real-time traffic video analysis system to detect
+                vehicles, analyze risky driving behaviors, and generate driver risk
+                scores.
+              </p>
+              <div class="project__stack">
+                <span class="tag">Python</span>
+                <span class="tag">YOLOv5</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">DeepSORT</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" data-disabled="true">Code</a>
+                <a class="link" href="#" data-disabled="true">Demo</a>
+              </div>
+            </article>
+
+            <article class="project" data-tags="nlp">
+              <div class="project__top">
+                <h3 class="project__title">AI Text Summary Generator</h3>
+                <span class="badge">NLP</span>
+              </div>
+              <p class="project__desc">
+                Built an NLP tool to generate concise summaries from long text
+                using abstractive and extractive techniques.
+              </p>
+              <div class="project__stack">
+                <span class="tag">Python</span>
+                <span class="tag">Hugging Face</span>
+                <span class="tag">Transformers</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" data-disabled="true">Code</a>
+                <a class="link" href="#" data-disabled="true">Demo</a>
+              </div>
+            </article>
+
+            <article class="project" data-tags="iot">
+              <div class="project__top">
+                <h3 class="project__title">Weather Monitoring System (IoT-Based)</h3>
+                <span class="badge">App</span>
+              </div>
+              <p class="project__desc">
+                Developed a desktop application that displays real-time weather
+                updates based on user-input city names.
+              </p>
+              <div class="project__stack">
+                <span class="tag">Python</span>
+                <span class="tag">Tkinter</span>
+                <span class="tag">OpenWeatherMap API</span>
+                <span class="tag">PIL</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" data-disabled="true">Code</a>
+                <a class="link" href="#" data-disabled="true">Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Skills</h2>
+            <p class="section__subtitle"></p>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="card">
+              <h3 class="card__title">Languages / Tech</h3>
+              <ul class="list">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Java, C</li>
+                <li>SQL</li>
+                <li>DBMS, Data Structures</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Tools</h3>
+              <ul class="list">
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>MS Office</li>
+                <li>Canva</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Core strengths</h3>
+              <ul class="list">
+                <li>Coding</li>
+                <li>Problem-solving</li>
+                <li>Team collaboration</li>
+                <li>Adaptability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Education</h2>
+            <p class="section__subtitle">Academic background.</p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body">
+                <div class="timeline__top">
+                  <h3 class="timeline__title">
+                    B.Tech — Computer Science (Artificial Intelligence &amp; Machine Learning)
+                  </h3>
+                  <p class="timeline__time">2024–2027</p>
+                </div>
+                <p class="timeline__meta">
+                  BV Raju Institute of Technology, Narsapur • <strong>CGPA:</strong> 8.47 (current)
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body">
+                <div class="timeline__top">
+                  <h3 class="timeline__title">Diploma — Computer Science &amp; Engineering</h3>
+                  <p class="timeline__time">2021–2024</p>
+                </div>
+                <p class="timeline__meta">
+                  Govt. Polytechnic for Women, Suryapet • <strong>CGPA:</strong> 9.87
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="resume">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Resume</h2>
+            <p class="section__subtitle">
+              ATS-friendly content. Use the button above to download a PDF.
+            </p>
+          </div>
+
+          <div class="resume card">
+            <div class="resume__head">
+              <div>
+                <h3 class="resume__name">POOJA SRI CHILAKALA</h3>
+                <p class="resume__line">
+                  Hyderabad, Telangana, India •
+                  <a href="mailto:sripooja782@gmail.com">sripooja782@gmail.com</a>
+                  • <a href="tel:+916300377671">+91 63003 77671</a>
+                </p>
+                <p class="resume__line">
+                  <a href="https://github.com/sripooja123" target="_blank" rel="noreferrer"
+                    >github.com/sripooja123</a
+                  >
+                  •
+                  <a
+                    href="https://www.linkedin.com/in/pooja63003"
+                    target="_blank"
+                    rel="noreferrer"
+                    >linkedin.com/in/pooja63003</a
+                  >
+                </p>
+              </div>
+              <button class="btn btn--ghost" type="button" data-print>
+                Print
+              </button>
+            </div>
+
+            <div class="resume__section">
+              <h4 class="resume__title">Career objective</h4>
+              <p class="resume__text">
+                Enthusiastic CSE (AI &amp; ML) student with strong problem-solving skills and
+                Smart Interview performance, seeking an internship. Passionate about coding,
+                awareness, and building innovative, user-friendly solutions. Adaptable to global
+                work environments with commitment to long-term learning and contribution to
+                multidisciplinary projects.
+              </p>
+            </div>
+
+            <div class="resume__section">
+              <h4 class="resume__title">Technical skills</h4>
+              <p class="resume__text">
+                <strong>Languages/Tech:</strong> HTML, CSS, JavaScript, Java, C, SQL, DBMS, Data Structures
+              </p>
+              <p class="resume__text">
+                <strong>Tools:</strong> GitHub, VS Code, MS Office, Canva
+              </p>
+              <p class="resume__text">
+                <strong>Core strengths:</strong> Coding, Problem-Solving, Team Collaboration, Adaptability
+              </p>
+            </div>
+
+            <div class="resume__section">
+              <h4 class="resume__title">Education</h4>
+              <ul class="resume__bullets">
+                <li>
+                  <strong>B.Tech — CSE (AI &amp; ML)</strong>, BV Raju Institute of Technology, Narsapur
+                  (2024–2027) — <strong>CGPA:</strong> 8.47 (current)
+                </li>
+                <li>
+                  <strong>Diploma — CSE</strong>, Govt. Polytechnic for Women, Suryapet (2021–2024) —
+                  <strong>CGPA:</strong> 9.87
+                </li>
+              </ul>
+            </div>
+
+            <div class="resume__section">
+              <h4 class="resume__title">Projects</h4>
+              <ul class="resume__bullets">
+                <li>
+                  <strong>AstroTrack — Astronomical Object Tracking</strong> (Python, YOLOv8, OpenCV, DeepSORT,
+                  Roboflow, TensorFlow): Built a real-time system to detect and track satellites and
+                  space debris in simulated night-sky video feeds.
+                </li>
+                <li>
+                  <strong>NeuroNavGPT — Vision-Language Co-Pilot for Surgical Guidance</strong> (Python,
+                  TensorFlow, OpenCV, YOLOv8, BLIP-2): Built a real-time vision-language assistant for
+                  pituitary tumor MRI analysis, enabling language-based surgical queries and feedback.
+                </li>
+                <li>
+                  <strong>YOLO-Based Vehicle Risk Behaviour Analyser</strong> (Python, YOLOv5, OpenCV, DeepSORT,
+                  MySQL): Developed a real-time traffic video analysis system to detect vehicles, analyze
+                  risky driving behaviors, and generate driver risk scores.
+                </li>
+                <li>
+                  <strong>AI Text Summary Generator</strong> (Python, Hugging Face Transformers): Built an NLP-based
+                  tool to generate concise summaries from long text using abstractive and extractive summarization.
+                </li>
+                <li>
+                  <strong>Weather Monitoring System (IoT-Based)</strong> (Python, Tkinter, OpenWeatherMap API, PIL):
+                  Developed a desktop application that displays real-time weather updates based on user-input city names.
+                </li>
+              </ul>
+            </div>
+
+            <div class="resume__section">
+              <h4 class="resume__title">Certifications &amp; achievements</h4>
+              <ul class="resume__bullets">
+                <li>Smart Interviews — Demonstrated coding and problem-solving proficiency (Low Red Flags Score)</li>
+                <li>Salesforce Certified — Advanced Administrator, Agentforce Specialist</li>
+                <li>Participant — Technical Hackathon at IIT Hyderabad (April 2025)</li>
+                <li>Participant — Artificial Intelligence Workshop, TechGyan Technologies at IIT Hyderabad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">
+              Send a message (opens your email app), or reach me directly.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <form class="card form" data-contact-form>
+              <div class="form__row">
+                <label class="label" for="name">Name</label>
+                <input class="input" id="name" name="name" required />
+              </div>
+              <div class="form__row">
+                <label class="label" for="email">Email</label>
+                <input class="input" id="email" name="email" type="email" required />
+              </div>
+              <div class="form__row">
+                <label class="label" for="message">Message</label>
+                <textarea class="textarea" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">Send</button>
+              <p class="tiny">
+                This is client-side only (no server). It will open your email app with a prefilled message.
+              </p>
+            </form>
+
+            <div class="card contactCard">
+              <h3 class="card__title">Details</h3>
+              <ul class="list">
+                <li>
+                  <strong>Email:</strong>
+                  <a href="mailto:sripooja782@gmail.com">sripooja782@gmail.com</a>
+                </li>
+                <li>
+                  <strong>Phone:</strong>
+                  <a href="tel:+916300377671">+91 63003 77671</a>
+                </li>
+                <li>
+                  <strong>GitHub:</strong>
+                  <a href="https://github.com/sripooja123" target="_blank" rel="noreferrer"
+                    >sripooja123</a
+                  >
+                </li>
+                <li>
+                  <strong>LinkedIn:</strong>
+                  <a href="https://www.linkedin.com/in/pooja63003" target="_blank" rel="noreferrer"
+                    >pooja63003</a
+                  >
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="tiny">© <span data-year></span> Pooja Sri Chilakala</p>
+        <a class="tiny link" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
